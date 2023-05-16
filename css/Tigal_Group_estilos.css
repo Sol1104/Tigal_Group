@@ -97,7 +97,7 @@ body {
 
 nav {
 	z-index: 1;
-	padding: 15px 0;
+	padding: 1px 0;
 	}
 
 #logo-nav   {
@@ -300,6 +300,8 @@ form .form-group {
 				 z-index: 1;
 				 margin-bottom: 15px;
 				 }
+
+
 
 #social-footer  {
 				z-index: 1;
