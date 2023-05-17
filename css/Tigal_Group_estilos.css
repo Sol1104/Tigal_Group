@@ -173,6 +173,22 @@ nav {
 																			transition: all ease-in-out .7s;
 																			}
 
+ul  {
+	z-index: 1;
+	margin: auto;
+	padding: 0;
+	}
+li 	{
+	z-index: 1;
+	list-style: none;
+	display: inline-block;
+	margin: 0 1px;
+	position: relative;
+	float:left;
+	}
+
+
+
 img {
 	z-index: 1;
 	width: 100%;
@@ -278,6 +294,13 @@ section {
 		padding: 30px 0;
 		}
 
+section.blog {
+    		 z-index: 1;
+			 padding: 30px 0;
+			 background-image: url(../img/Fondo_03.jpg);
+			 }
+
+
 form {
 	 z-index: 1;
 	 position: relative;
@@ -300,8 +323,6 @@ form .form-group {
 				 z-index: 1;
 				 margin-bottom: 15px;
 				 }
-
-
 
 #social-footer  {
 				z-index: 1;
