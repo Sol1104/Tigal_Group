@@ -41,12 +41,23 @@ body {
 		flex: 0 0 calc(100% - 30px);
    		max-width: calc(100% - 30px);
         }
+.col-8  {
+		z-index: 1;
+		flex: 0 0 calc(60% - 30px);
+   		max-width: calc(60% - 30px);
+        }
 
 .col-6  {
 		z-index: 1;
 		flex: 0 0 calc(50% - 30px);
    		max-width: calc(50% - 30px);
         }
+
+.col-5  {
+		z-index: 1;
+		flex: 0 0 calc(41.0% - 30px);
+   		max-width: calc(41.0% - 30px);
+		}
 
 .col-4  {
 		z-index: 1;
@@ -389,15 +400,44 @@ p {
 			z-index: 7;
 			left: 75%;
 			}
-
-/*#blog .img_fond_blog{
+/*#servicios,img_fond_serv{
+	z-index: -2;
 	display: flex;
-	background: url("../img/Fondo_03.jpg");
+	background: url("../img/Fondo_01.jpg");
+	background-opacity: 20%;
+	background-color: 0,0,0,0,0,0%;
 	background-size: cover;
 	background-position: center;
-}*/
+}
+#portafolio{
+	background: #000000;
+}
+#testimonios,img_fond_tes{
+	z-index: -2;
+	display: flex;
+	background: url("../img/Fondo_02.jpg");
+	background-opacity: 20%;
+	background-color: 0,0,0,0,0,0%;
+	background-size: cover;
+	background-position: center;
+}
 
-/*id.blog{
-	
+#blog,img_fond_blog{
+	z-index: -2;
+	display: flex;
 	background: url("../img/Fondo_03.jpg");
-}*/
+	background-opacity: 20%;
+	background-color: 0,0,0,0,0,0%;
+	background-size: cover;
+	background-position: center;
+}
+#pie-pagina,img_fond_pie{
+	z-index: -2;
+	display: flex;
+	background: url("../img/Fondo_04.jpg");
+	background-opacity: 20%;
+	background-color: 0,0,0,0,0,0%;
+	background-size: cover;
+	background-position: center;
+}
+*/
