@@ -72,6 +72,10 @@ nav .nav_links a:hover{
     color: #FFC501;
 }
 
+.nav-link:focus{
+    color: #FFC501;
+}
+
 .btn{
 	color: #FFC501;
 	text-decoration: none;
