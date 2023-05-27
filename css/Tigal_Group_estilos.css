@@ -92,8 +92,15 @@ nav .nav_links a:hover{
 
 .container_fluid {
 				 z-index: 1;
-				 width: calc(100% - 30px);
+				 width: 100%
 				 }
+
+.texto_sobre_img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .row {
 	 z-index: 1;
