@@ -1,5 +1,6 @@
 // JavaScript Document
 
+/*
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slide-image");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
@@ -43,3 +44,5 @@ btnLeft.addEventListener('click', function(){
 setInterval(function(){
 	Next();
 }, 5000);
+
+*/
