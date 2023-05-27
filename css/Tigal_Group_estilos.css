@@ -15,6 +15,10 @@ html {
 	font-size: 16px;
 	}
 
+body {
+	 z-index: 1;
+	 margin: 0;
+	 }
 
 nav{
     background-color: #000000;	
@@ -68,19 +72,16 @@ nav .nav_links a:hover{
     color: #FFC501;
 }
 
-.container  {
-			z-index: 1;
-			max-width: 1140px;
-			padding: 0 15px;
-			margin: auto;
-			}
-
-/*
-
-body {
-	 z-index: 1;
-	 margin: 0;
-	 }
+.btn{
+	color: #FFC501;
+	text-decoration: none;
+	border-radius: 15px;
+	border: 1.5px solid #FFC501;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+}
 
 .container  {
 			z-index: 1;
@@ -88,6 +89,11 @@ body {
 			padding: 0 15px;
 			margin: auto;
 			}
+
+.container_fluid {
+				 z-index: 1;
+				 width: calc(100% - 30px);
+				 }
 
 .row {
 	 z-index: 1;
@@ -102,6 +108,7 @@ body {
 	 z-index: 1;
 	 padding: 0 15px;
 	 }
+
 
 .col-12 {
 		z-index: 1;
@@ -144,116 +151,6 @@ body {
    		max-width: calc(16.6% - 30px);
 		}
 
-#top-bar {
-		 z-index: 1;
-		 padding: 10px 0;
-		 }
-
-#top-bar ul {
-			z-index: 1;
-			margin: auto;
-			padding: 0;
-			}
-
-#top-bar ul li  {
-				z-index: 1;
-				list-style: none;
-				display: inline-block;
-				}
-
-#top-bar #datos-top-bar li i {
-							 z-index: 1;
-							 margin-right: 5px
-							 }
-
-#top-bar ul li a {
-				 z-index: 1;
-				 text-decoration: none;
-			 	 display: inline-block;
-				 padding: 10px;
-				 }
-
-nav {
-	z-index: 1;
-	padding: 1px 0;
-	background: #000000;
-	}
-
-#logo-nav   {
-			z-index: 1;
-			width: 150px;
-			display: inline-block;
-			vertical-align: middle;
-			}
-
-#logo-nav h1 {
-			 z-index: 1;
-			 display: none;
-			 }
-
-#logo-nav img   {
-				z-index: 1;
-				width: 100%;
-				height: auto;
-				}
-
-#menu-superior .container   {
-							z-index: 1;
-							display: flex;
-							flex-wrap: wrap;
- 						    justify-content: space-between;
-   							align-items: center;
-							}
-
-#menu-superior .enlaces-nav {
-							z-index: 1;
-							display: inline-block;
-							}
-
-#menu-superior .enlaces-nav ul, #menu-superior #icon-nav .icons-nav {
-																	z-index: 1;
-																	margin: auto;
-																	padding: 0;
-																	}
-
-#menu-superior .enlaces-nav li, #menu-superior #icon-nav .icons-nav li 	{
-																		z-index: 1;
-																		list-style: none;
-																		display: inline-block;
-																		margin: 0 1px;
-																		position: relative;
-																		float: left;
-																		}
-
-/*#menu-superior .enlaces-nav li:before, #menu-superior #icon-nav .icons-nav li:before {
-																					 z-index: 1;
-																					 content: "";
-																				 	 width: 1px;
-																					 height: 30px;
-																					 background: #000;
-																					 display: inline-block;
-																					 position: absolute;
-																					 top: 50%;
-																					 margin-top: -15px;
-																					 margin-left: -2px;
-																					 }*/
-/*
-
-#menu-superior .enlaces-nav li:first-child:before, #menu-superior #icon-nav .icons-nav li:first-child:before {
-																											 z-index: 1;
-																											 content: none;
-																											 }
-
-#menu-superior .enlaces-nav li a, #menu-superior #icon-nav .icons-nav li a 	{
-																			z-index: 1;
-																			text-decoration: none;
-																			font-size: 18px;
-																			padding: 10px 12px;
-																			display: inline-block;
-																			transition: all ease-in-out .7s;
-																			color: aliceblue;
-																			}
-
 ul  {
 	z-index: 1;
 	margin: auto;
@@ -269,68 +166,128 @@ li 	{
 	float:left;
 	}
 
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 72px;
+	/*display: none;*/
+	z-index: 1;
+}
+
+p {
+  z-index: 1;
+  text-align: justify;
+  color: aliceblue;
+  }
+
 img {
 	z-index: 1;
 	width: 100%;
 	height: auto;
 	}
 
-.container-fluid {
-				 z-index: 1;
-				 width: calc(100% - 30px);
-				 padding: 0 15px;
-				 }
+#proyectos_estrellas {
+					 background: #FFC501;
+					 opacity: 0.85;
+					 }
+.sub-titular {
+			 font-size: 21px;
+ 			 }
+#resumen {
+		 background-color: #282828;
+		 }
 
-.galeria-portafolio {
-					z-index: 1;
-					display: grid;
-					/*grid-template-columns:repeat (4, 1fr);*/
-/*					grid-template-rows: 250px;
-					grid-gap: 3px;
-					}
+#resumen .img_resumen {
+					  margin-top: 40px;
+					  margin-bottom: 5px;
+					  height: 150px;
+					  width: 368px;
+				      }
 
-.galeria-portafolio .box-img {
-							 z-index: 1;
-							 position: relative;
-							 }
+.triangulo  {
+			width: 0;
+			height: 0;
+			border-left: 950px solid transparent;
+			border-right: 950px solid transparent;
+			border-top: 70px solid #282828;
+			}
 
-.galeria-portafolio .box-img .cont-galeria  {
-											z-index: 1;
-											position: absolute;
-											left: 0;
-											right: 0;
-											top: 0;
-											bottom: 0;
-											display: flex;
-											flex-direction: column;
-											justify-content: center;
-											align-items: center;
-											transition: all ease-in-out .7s;
-											opacity: 0;
-											}
 
-.galeria-portafolio .box-img:hover .cont-galeria {
-												 z-index: 1;
-												 opacity: 1;
-												 }
+/*section {
+		z-index: 1;
+		padding: 30px 0;
+		}*/
 
-.galeria-portafolio .box-img img {
+#contacto,checkbox{
+	color: aliceblue;
+}
+
+#back-top {
+		  opacity: 1;
+		  visibility: visible;
+		  right:40px;
+		  color: #FFC501;
+		  height: auto;
+		  position: fixed;
+		  bottom: 60px;
+		  margin: 0;
+		  z-index: 10000;
+		  }
+
+
+
+#social-footer  {
+				z-index: 1;
+				padding: 0;
+				margin: auto;
+				}
+
+#social-footer li {
+				  z-index: 1;
+				  list-style: none;
+				  display: inline-block;
+				  margin: 0 5px;
+				  }
+
+#pie-pagina form .btn-newsletter {
 								 z-index: 1;
-								 height: 250px;
-								 object-fit: cover;
-								 object-position: center;
-								 }
+								 position: absolute;
+								 right: 0;
+								 top: 0;
+								 height: 29px;
+								 }	
 
-.galeria-portafolio .box-img:nth-child(1) {
-										  z-index: 1;
-										  grid-column-start: span 2;
-										  }
+#back-top {
+										z-index: 9;
+										padding: 10px;
+										font-size: 20px;
+										display: inline-flex;
+										align-items: center;
+										justify-content: center;
+										text-decoration: none;
+										position: fixed;
+										bottom: 0;
+										}
 
-.galeria-portafolio .box-img:nth-child(6) {
-										  z-index: 1;
-										  grid-column-start: span 2;
-										  }
 
+/*fondos*/
+
+#portafolio {
+			background: #282828;
+			}
+
+#contacto {
+		  background: #000000;
+		  }
+#pie-pagina,img_fond_pie{
+	z-index: -2;
+	display: flex;
+	background: url("../img/Fondo_04.jpg");
+	background-opacity: 20%;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+/*
 .btn {
 	 z-index: 1;
 	 padding: 5px 15px;
@@ -417,18 +374,6 @@ enlace enlace-copy {
 			 		margin-left: -2px;																					 
 					}
 
-#social-footer  {
-				z-index: 1;
-				padding: 0;
-				margin: auto;
-				}
-
-#social-footer li {
-				  z-index: 1;
-				  list-style: none;
-				  display: inline-block;
-				  margin: 0 5px;
-				  }
 
 #pie-pagina form .btn-newsletter {
 								 z-index: 1;
@@ -437,12 +382,6 @@ enlace enlace-copy {
 								 top: 0;
 								 height: 29px;
 								 }	
-
-p {
-  z-index: 1;
-  text-align: justify;
-  color: aliceblue;
-  }
 
 #back-top, #whatsapp-modal, #bot-modal  {
 										z-index: 9;
@@ -481,54 +420,4 @@ p {
 #contacto,checkbox{
 	color: aliceblue;
 }
-
-#servicios,img_fond_serv{
-	z-index: -2;
-	display: flex;
-	background: url("../img/Fondo_01.jpg");
-	background-opacity: 20%;
-	background-color: 0,0,0,0,0,0%;
-	background-size: cover;
-	background-position: center;
-}
-#portafolio{
-	background: #282828;
-}
-#proyectos_estrellas{
-	background: #FFC501;
-}
-
-#resumen{
-	background: #282828;
-}
-#contacto{
-	background: #000000;
-}
-#testimonios,img_fond_tes{
-	z-index: -2;
-	display: flex;
-	background: url("../img/Fondo_02.jpg");
-	background-opacity: 20%;
-	background-color: 0,0,0,0,0,0%;
-	background-size: cover;
-	background-position: center;
-}
-
-#blog,img_fond_blog{
-	z-index: -2;
-	display: flex;
-	background: url("../img/Fondo_03.jpg");
-	background-opacity: 20%;
-	background-color: 0,0,0,0,0,0%;
-	background-size: cover;
-	background-position: center;
-}
-#pie-pagina,img_fond_pie{
-	z-index: -2;
-	display: flex;
-	background: url("../img/Fondo_04.jpg");
-	background-opacity: 20%;
-	background-color: 0,0,0,0,0,0%;
-	background-size: cover;
-	background-position: center;
-} */
+ */
