@@ -72,14 +72,14 @@ nav .nav_links a:hover {
     				   color: #FFC501;
 					   }
 .sub_titular {
-  text-align: justify;
-  color: aliceblue;
-font-size: 19px;
-}
+  			 text-align: justify;
+ 			 color: aliceblue;
+			 font-size: 19px;
+			 }
 
 .nav_link_item:focus {
-    			color: #FFC501;
-				}
+    				 color: #FFC501;
+					 }
 
 .btn {
 	 color: #FFC501;
@@ -184,8 +184,9 @@ li 	{
 	}
 
 h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway',sans-serif;
 	font-size: 72px;
+	font-weight: lighter;
 	color: aliceblue;
 	z-index: 1;
 }
@@ -203,14 +204,18 @@ img {
 	}
 
 #imagen-pricipal{
-	filter: brightness(40%); 
+	filter: brightness(70%); 
+	height: 950px;
+	/*width: 200px;
+	height: 200px;
+	object-fit: none;*/
 	}
 
 #proyectos_estrellas {
 					 background: #FFC501;
 					 opacity: 0.80;
 					 position: absolute;
-					 top: 97.5%;
+					 top: 89.7%;
 	 				 left: 0%;
 					 right: 0%;	
 					 }
