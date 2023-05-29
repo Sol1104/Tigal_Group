@@ -71,10 +71,11 @@ nav .nav_links a {
 nav .nav_links a:hover {
     				   color: #FFC501;
 					   }
-.sub_titular {
+.sub_titular_nav {
   			 text-align: justify;
  			 color: aliceblue;
 			 font-size: 19px;
+			 font-family: 'Lato', sans-serif;
 			 }
 
 .nav_link_item:focus {
@@ -91,6 +92,16 @@ nav .nav_links a:hover {
 	 padding-right: 15px;
 	 padding-top: 5px;
 	 }
+
+.btn {
+	 cursor: pointer;
+     margin-right: auto;
+	 display: inline-block;
+	 }
+
+.btn:hover {
+	transform: scale(1.2);
+		   }
 
 .container  {
 			z-index: 1;
@@ -191,6 +202,23 @@ h1 {
 	z-index: 1;
 }
 
+h2 {
+	font-family: 'Raleway',sans-serif;
+	font-size: 64px;
+	font-weight: lighter;
+	color: #000000;
+	z-index: 1;
+}
+
+.sub-titular{
+	
+	font-family: 'Raleway',sans-serif;
+	font-size: 21px;
+	font-weight: lighter;
+	color: #000000;
+	z-index: 1;
+}
+
 p {
   z-index: 1;
   text-align: justify;
@@ -219,11 +247,9 @@ img {
 	 				 left: 0%;
 					 right: 0%;	
 					 }
-.sub-titular {
-			 font-size: 21px;
- 			 }
+
 #resumen {
-		margin-top: -3px;
+		 margin-top: -3px;
 		 background-color: #282828;
 		 }
 
@@ -233,7 +259,9 @@ img {
 					  height: 150px;
 					  width: 368px;
 				      }
-
+.txt_resumen{
+	margin-top: 30px;
+}
 .triangulo  {
 			width: 0;
 			height: 0;
@@ -242,7 +270,10 @@ img {
 			border-top: 70px solid #282828;
 			}
 
-
+#servicios{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 /*section {
 		z-index: 1;
 		padding: 30px 0;
@@ -319,15 +350,7 @@ img {
 }
 
 /*
-.btn {
-	 z-index: 1;
-	 padding: 5px 15px;
-	 font-size: 16px;
-	 text-decoration: none;
-	 display: inline-block;
-	 color: #000;
-	 line-height: 1 !important;
-	 }
+
 
 .enlace {
 		z-index: 1;
@@ -425,28 +448,6 @@ enlace enlace-copy {
 										position: fixed;
 										bottom: 0;
 										}
-
-#back-top {
-		  opacity: 1;
-		  visibility: visible;
-		  right:40px;
-		  color: #000000;
-		  height: auto;
-		  position: fixed;
-		  bottom: 65px;
-		  margin: 0;
-		  z-index: 10000;
-		  }
-
-#whatsapp-modal {
-				z-index: 6;
-				left: 50%;
-				}
-
-#bot-modal  {
-			z-index: 7;
-			left: 75%;
-			}
 
 #contacto,checkbox{
 	color: aliceblue;
