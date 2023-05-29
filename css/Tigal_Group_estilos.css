@@ -72,11 +72,11 @@ nav .nav_links a:hover {
     				   color: #FFC501;
 					   }
 .sub_titular_nav {
-  			 text-align: justify;
- 			 color: aliceblue;
-			 font-size: 19px;
-			 font-family: 'Lato', sans-serif;
-			 }
+				 text-align: justify;
+				 color: aliceblue;
+				 font-size: 19px;
+				 font-family: 'Lato', sans-serif;
+				 }
 
 .nav_link_item:focus {
     				 color: #FFC501;
@@ -202,22 +202,25 @@ h1 {
 	z-index: 1;
 }
 
-h2 {
+h2  {
 	font-family: 'Raleway',sans-serif;
 	font-size: 64px;
 	font-weight: lighter;
 	color: #000000;
 	z-index: 1;
-}
+	}
 
 .sub-titular{
-	
 	font-family: 'Raleway',sans-serif;
 	font-size: 21px;
 	font-weight: lighter;
 	color: #000000;
 	z-index: 1;
 }
+
+.separation {
+			margin-bottom: 50px;
+			}
 
 p {
   z-index: 1;
@@ -231,13 +234,13 @@ img {
 	height: auto;
 	}
 
-#imagen-pricipal{
-	filter: brightness(70%); 
-	height: 950px;
+#imagen-pricipal {
+				 filter: brightness(70%); 
+				 height: 950px;
 	/*width: 200px;
 	height: 200px;
 	object-fit: none;*/
-	}
+				 }
 
 #proyectos_estrellas {
 					 background: #FFC501;
@@ -259,9 +262,11 @@ img {
 					  height: 150px;
 					  width: 368px;
 				      }
-.txt_resumen{
-	margin-top: 30px;
-}
+
+.txt_resumen {
+			 margin-top: 30px;
+			 }
+
 .triangulo  {
 			width: 0;
 			height: 0;
@@ -270,18 +275,75 @@ img {
 			border-top: 70px solid #282828;
 			}
 
-#servicios{
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-/*section {
+#servicios {
+		   margin-top: 50px;
+		   margin-bottom: 40px;
+		   }
+
+#portafolio {
+		    margin-top: 50px;
+		    margin-bottom: 40px;
+		    }
+
+.enlace {
 		z-index: 1;
-		padding: 30px 0;
-		}*/
+		text-decoration: none;
+		font-size: 18px;
+		position: relative;
+		display: inline-block;
+		color: #000;
+		}
+
+.enlace:before  {
+				z-index: 1;
+				content: "";
+				position: absolute;
+				height: 1px;
+				background: #000;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 100%;
+				max-width: 0%;
+				transition: all ease-in-out .7s;
+				}
+
+.enlace:hover:before {
+					 z-index: 1;
+					 max-width: 100%;
+					 }
+
+
 
 #contacto,checkbox  {
 					color: aliceblue;
 					}
+
+form {
+	 z-index: 1;
+	 position: relative;
+	 }
+
+form label  {
+			z-index: 1;
+			display: none;
+			margin-bottom: 5px;
+			}
+
+form input, form textarea   {
+							z-index: 1;
+							display: block;
+							width: -webkit-fill-available;
+							padding: 5px 15px;
+							outline: none;
+	
+							}
+form .form-group {
+				 z-index: 1;
+				 margin-bottom: 15px;
+				 }
+
+
 
 #back-top {
 		  opacity: 1;
@@ -294,8 +356,6 @@ img {
 		  margin: 0;
 		  z-index: 10000;
 		  }
-
-
 
 #social-footer  {
 				z-index: 1;
@@ -340,6 +400,7 @@ img {
 #contacto {
 		  background: #000000;
 		  }
+
 #pie-pagina,img_fond_pie{
 	z-index: -2;
 	display: flex;
@@ -350,70 +411,6 @@ img {
 }
 
 /*
-
-
-.enlace {
-		z-index: 1;
-		text-decoration: none;
-		font-size: 18px;
-		position: relative;
-		display: inline-block;
-		color: #000;
-		}
-
-.enlace:before  {
-				z-index: 1;
-				content: "";
-				position: absolute;
-				height: 1px;
-				background: #000;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				width: 100%;
-				max-width: 0%;
-				transition: all ease-in-out .7s;
-				}
-
-.enlace:hover:before {
-					 z-index: 1;
-					 max-width: 100%;
-					 }
-
-section {
-		z-index: 1;
-		padding: 30px 0;
-		}
-
-section.blog {
-    		 z-index: 1;
-			 padding: 30px 0;
-			 background-image: url(../img/Fondo_03.jpg);
-			 }
-
-
-form {
-	 z-index: 1;
-	 position: relative;
-	 }
-
-form label  {
-			z-index: 1;
-			display: none;
-			margin-bottom: 5px;
-			}
-
-form input, form textarea   {
-							z-index: 1;
-							display: block;
-							width: -webkit-fill-available;
-							padding: 5px 10px;
-							outline: none;
-							}
-form .form-group {
-				 z-index: 1;
-				 margin-bottom: 15px;
-				 }
 
 enlace enlace-copy {
 					z-index: 1;
