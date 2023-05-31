@@ -7,8 +7,9 @@
 	<link href="css/Tigal_Group_estilos.css" rel="stylesheet" type="text/css">
 	<link href="css/slider.css" rel="stylesheet" type="text/css">
 	<link href="css/cards_hover_servicios.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.2.1.js"></script>
 	<script src="https://kit.fontawesome.com/f7cf336829.js" crossorigin="anonymous"></script>
-	<script src="js/slider.js"></script>
+	<script src="js/filtrado.js"></script>
 <title>TigalGroup</title>
 </head>
 	
@@ -126,7 +127,7 @@
 			
 			<div class="separation">			
 			<center>			
-			<h2>Servicios</h2>
+			<h2>SERVICIOS</h2>
 			<span class="sub-titular">Conoce lo que tenemos para ofrecer</span>
 			</center>
 			</div>
@@ -135,7 +136,7 @@
 
 			<div class="card">
 				
-				<figure>
+				<figure class="fondo_trasparente">
 				<img src="img/Servicio_01_mark.gif">
 				</figure>
 				
@@ -257,10 +258,11 @@
 
 		</div>
 	</section>
-		
+	
+	<div class="triangulo_2"></div>		
 	<section id="portafolio">
 		
-		<div class="container">
+		<div class="wrap">
 			
 			<div class="lineas">
 			<span class="lineas linea-superior"></span>
@@ -269,105 +271,95 @@
 			
 			<div class="separation">
 			<center>
-			<h2>Portafolio</h2>
+			<h2>PORTAFOLIO</h2>
 			<span class="sub-titular">Filtra segun la categoria que deseas ver</span>
 			</center>
 			</div>
-		
-			<center>
-			<div class="row">
 				
-				<div class=" col col-1">
-				</div>
+			<div class="container">
 				
-				<div class=" col col-2">
-				<a href="#" class="filtrado_portafolio">All</a>
-				</div>
-
-				<div class=" col col-2">
-				<a href="#" class="filtrado_portafolio">Branging</a>
-				</div>
+			<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="all">ALL</a>
+				<a href="#" class="category_item" category="branding">BRANDING</a>
+				<a href="#" class="category_item" category="web">WEB</a>
+				<a href="#" class="category_item" category="arq_retrail">ARQUITECTURA RETRAIL</a>
+				<a href="#" class="category_item" category="fotografia">FOTOGRAFIA</a>
+			</div>
 				
-				<div class=" col col-2">
-				<a href="#" class="filtrado_portafolio">Web</a>
+			<section class="portafolio-list">
+				
+				<div class="portafolio-item" category="branding">
+				<div class="borde_portafolio">
+				<img src="img/Logo_lube_confiteria.png" alt="">
+				<center>
+				<h3>CONFITERÍA LUBEN</h3>
+				</center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
 				</div>
-					
-				<div class=" col col-2">
-				<a href="#" class="filtrado_portafolio">Arquitectura Retrail</a>
-				</div>
-					
-				<div class=" col col-2">
-				<a href="#" class="filtrado_portafolio">Fotografia</a>
 				</div>
 				
-				<div class=" col col-1">					
+				<div class="portafolio-item" category="arq_retrail">
+				<div class="borde_portafolio">
+				<img src="img/Logo_boh_calzado.png" alt="">
+				<center><h3>BÖH CALZADO</h3></center>
+				<p align="center">Arquitectura retail y creación de branding estratégico.</p>
+				</div>
 				</div>
 				
-			</div>					
-			</center>
-			
-			<br> <br>	
-			
-			<div class="row">
-				
-				<div class="col col-3">
-					<img src="img/Logo_lube_confiteria.png" alt="">
-					<center>
-					  <h3>CONFITERÍA <strong>LUBEN</strong></h3>
-					</center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				<div class="portafolio-item" category="arq_retrail">
+				<div class="borde_portafolio">
+				<img src="img/Logo_ilsalone.png" alt="">
+				<center><h3>IL SALONE ESTILISTAS</h3></center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				</div>
 				</div>
 				
-				<div class="col col-3">
-					<img src="img/Logo_boh_calzado.png" alt="">
-					<center><h3>BÖH CALZADO</h3></center>
-					<p align="center">Arquitectura retail y creación de branding estratégico e identidad corporativa publicitaria.</p>
+				<div class="portafolio-item" category="web">
+				<div class="borde_portafolio">
+				<img src="img/Logo_emilio_montero.png" alt="">
+				<center><h3>EMILIO MONTERO</h3></center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				</div>
 				</div>
 				
-				<div class="col col-3">
-					<img src="img/Logo_ilsalone.png" alt="">
-					<center><h3>IL SALONE ESTILISTAS</h3></center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				<div class="portafolio-item" category="arq_retrail">
+				<div class="borde_portafolio">
+				<img src="img/Logo_rosa_vida.png" alt="">
+				<center><h3>ROSA VIDA</h3></center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				</div>
 				</div>
 				
-				<div class="col col-3">
-					<img src="img/Logo_emilio_montero.png" alt="">
-					<center><h3>EMILIO MONTERO</h3></center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				<div class="portafolio-item" category="branding">
+				<div class="borde_portafolio">
+				<img src="img/Logo_rey_sol.png" alt="">
+				<center><h3>REY SOL</h3></center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
 				</div>
+				</div>
+				
+				<div class="portafolio-item" category="web">
+				<div class="borde_portafolio">
+				<img src="img/Logo_ima_peru.png" alt="">
+				<center><h3>IMA PERU TOURS</h3></center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				</div>
+				</div>
+				
+				<div class="portafolio-item" category="fotografia">
+				<div class="borde_portafolio">
+				<img src="img/Logo_porturas.png" alt="">
+				<center><h3>PORTURAS &amp; LANDÁZURI</h3></center>
+				<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
+				</div>
+				</div>
+				
+			</section>
+			</div>	
 				
 			</div>
-			
-			<div class="row">
-				
-				<div class="col col-3">
-					<img src="img/Logo_lube_confiteria.png" alt="">
-					<center><h3>ROSA VIDA</h3></center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
-				</div>
-				
-				<div class="col col-3">
-					<img src="img/Logo_boh_calzado.png" alt="">
-					<center><h3>REY SOL</h3></center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
-				</div>
-				
-				<div class="col col-3">
-					<img src="img/Logo_ilsalone.png" alt="">
-					<center><h3>IMA PERU TOURS</h3></center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
-				</div>
-				
-				<div class="col col-3">
-					<img src="img/Logo_emilio_montero.png" alt="">
-					<center><h3>PORTURAS &amp; LANDÁZURI</h3></center>
-					<p align="center">Creación de branding estratégico e identidad corporativa publicitaria.</p>
-				</div>
-				
-			</div>
-			
-		</div>
-		
+		</div>		
 	</section>
 	
 	<section id="empresa">
@@ -378,7 +370,7 @@
 			<span class="lineas linea-inferior"></span>
 			</div>
 			
-			<center><h2>Conocenos</h2>
+			<center><h2>CONÓCENOS</h2>
 			<span class="sub-titular">Descubre nuestros dos proyectos sociales</span>
 			</center>
 			<br>
@@ -428,7 +420,7 @@
 			<span class="lineas linea-inferior"></span>
 			</div>
 			
-			<center><h2>Staff</h2>
+			<center><h2>STAFF</h2>
 			<span class="sub-titular">Conoce a nuestro equipo</span>
 			</center>
 			<br>
@@ -492,7 +484,7 @@
 			</div>
 						
 			<center>
-			<h2>Testimonios</h2>
+			<h2>TESTIMONIOS</h2>
 			<span class="sub-titular">Nuestros clientes tienen algo que decir</span>
 			<br><br>
 			</center>
@@ -569,7 +561,7 @@
 			</div>
 						
 			<center>
-			<h2>Contactos</h2>
+			<h2>CONTÁCTANOS</h2>
 			<span class="sub-titular">Si desea asesoramiento o quiere atencion personalizada no dude en contactarnos</span>
 			<br><br>
 			<br><br>
@@ -754,7 +746,7 @@
 			</div>
 						
 			<center>
-			<h2>Blog</h2>
+			<h2>BLOG</h2>
 			<span class="sub-titular">Texto de prueba</span>
 			</center>
 			<br>
