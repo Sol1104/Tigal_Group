@@ -35,4 +35,24 @@ $(document).ready(function(){
 			$('.portafolio-item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
+
+	// MOSTRAR UBICACION EN EL NAV
+
+		let menuPortafolio = document.querySelectorAll('.category_item');
+
+		menuPortafolio.forEach((item) => {
+			console.log(item);
+	
+			item.addEventListener('click', function() {
+	
+				menuPortafolio.forEach((item) => {
+					item.classList.remove('active');
+				});
+	
+				item.classList.add('active');
+	
+			});
+		});
+
 });
+

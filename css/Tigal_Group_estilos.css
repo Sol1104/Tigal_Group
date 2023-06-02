@@ -310,7 +310,8 @@ img {
 	 			padding: 0 60px;
 				}
 
-#portafolio a:before {
+
+#portafolio .category_item::before {
 					 z-index: 1;
 					 content: "";
 					 position: absolute;
@@ -320,13 +321,28 @@ img {
 					 left: 55px;
 					 right: 55px;
 					 max-width: 0%;
-					 transition: all ease-in-out .7s;	
+					 transition: all ease-in-out .7s;
 					 }
+					 
+
+ #portafolio .category_item.active::before {
+					z-index: 1;
+					content: "";
+					position: absolute;
+					height: 1px;
+					background:  #FFC501;
+					bottom: 0;
+					left: 55px;
+					right: 55px;
+					max-width: 100%;
+}
 
 #portafolio a:hover:before  {
 							 z-index: 1;
 							 max-width: 100%;
 							 }
+
+
 /*color amarillo activo en celección activa*/
 /*products-list .product-item a{
 	display:inline;
