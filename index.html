@@ -5,11 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="css/Tigal_Group_estilos.css" rel="stylesheet" type="text/css">
-	<link href="css/slider.css" rel="stylesheet" type="text/css">
 	<link href="css/cards_hover_servicios.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/swiper-bundle.min.js"></script>
+	
+	
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="https://kit.fontawesome.com/f7cf336829.js" crossorigin="anonymous"></script>
-	<script src="js/filtrado.js"></script>
+	<script defer src="js/filtrado.js"></script>
 <title>TigalGroup</title>
 </head>
 	
@@ -22,14 +27,15 @@
 	     	 <img src="img/Logo_tigalgroup.png" alt="Logo de la marca">
         	</div>
 			<div class="container">
+				
 			<ul class="nav_links">
-			<li class="nav-item">	<a href="#" class="nav_link_item">			 Inicio 	</a> </li>			
-			<li class="nav-item">	<a href="#servicios" class="nav_link_item">	 Servicios 	</a> </li>
-			<li class="nav-item">	<a href="#portafolio" class="nav_link_item"> Portafolio </a> </li>
-			<li class="nav-item">	<a href="#empresa" class="nav_link_item">	 Empresa 	</a> </li>
-			<li class="nav-item">	<a href="#staff" class="nav_link_item">		 Staff 		</a> </li>
-			<li class="nav-links">	<a href="#contacto" class="nav_link_item">	 Contacto 	</a> </li>
-			<li class="nav-item">	<a href="#blog" class="nav_link_item">		 Blog 		</a> </li>
+			<li> <a href="#" class="nav_link_item active" id="opcion01">    Inicio 	   </a> </li>			
+			<li> <a href="#servicios" class="nav_link_item" id="opcion02">  Servicios  </a> </li>
+			<li> <a href="#portafolio" class="nav_link_item" id="opcion03"> Portafolio </a> </li>
+			<li> <a href="#empresa" class="nav_link_item" id="opcion04">	Empresa    </a> </li>
+			<li> <a href="#staff" class="nav_link_item" id="opcion05">	    Staff 	   </a> </li>
+			<li> <a href="#contacto" class="nav_link_item" id="opcion06">   Contacto   </a> </li>
+			<li> <a href="#blog" class="nav_link_item" id="opcion07">	    Blog 	   </a> </li>
 			</ul>
 			</div>
 		</nav>
@@ -134,7 +140,7 @@
 						
 			<div class="container_card">
 
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure class="fondo_trasparente">
 				<img src="img/Servicio_01_mark.gif">
@@ -148,7 +154,7 @@
 				
 			</div>
 				
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_02_arq.gif">
@@ -162,7 +168,7 @@
 				
 			</div>
 				
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_03_web.gif">
@@ -180,7 +186,7 @@
 			
 			<div class="container_card">
 
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_04_empr.gif">
@@ -194,7 +200,7 @@
 				
 			</div>
 				
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_05_bran.gif">
@@ -208,7 +214,7 @@
 				
 			</div>
 				
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_06_foto.gif">
@@ -226,7 +232,7 @@
 
 			<div class="container_card_col2">
 
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_07_reg_marca.gif">
@@ -240,7 +246,7 @@
 				
 			</div>
 				
-			<div class="card">
+			<div class="card_ser">
 				
 				<figure>
 				<img src="img/Servicio_08_letr_3D.gif">
@@ -397,10 +403,12 @@
 					
 					<div class="emp_img" align="right">
 					<img src="img/Ofi_creativa.gif" alt="">
+					<div class="sep_tex">
 					<h3>IMAGINA - PROYECTO SOCIAL</h3>
 					<p>Nuestro equipo brinda talleres como proyectos sociales, para los jóvenes enfocándonos en poder enseñar, asesorar y brindar conocimientos en el área del Diseño, realizando diversas actividades de forma práctica para poder motivar e incentivar a los jóvenes a poder aprender sobre nuestro rubro.</p>
 					<p>Consiste en visitar colegio con bajos recursos y le hablarle sobre Diseño,creatividad y cómo crear un negocio propio.</p>
 					<a href="https://www.tigalbranding.com/nosotros-2/casa-grafica/" class="enlace enlace-empresa" target="_blank">Ver mas</a>
+					</div>
 					</div>
 					
 				</article>
@@ -410,11 +418,12 @@
 				<article class="empresa"> 
 					
 					<div class="emp_img">
+					<div class="sep_tex">
 					<h3>OFICINA CREATIVA</h3>
 					<p>Espacio creado para fomentar y crear el diseño, que inspire la innovación plasmada en cada proyecto – trabajo, enfocada siempre en el desarrollo, valor agregado, diferencial de cada proyecto.</p>
 					<p>Disponemos de un taller creativo con un equipo multidisciplinario, muy creativos y gestores, donde usted podrá observar más sobre nuestros trabajos, acompañándonos así a estructurar, construir y desarrollar su proyecto a realizar.</p>
 					<a href="https://www.tigalbranding.com/nosotros-2/casa-grafica/" class="enlace enlace-empresa" target="_blank">Ver mas</a>
-					<br><br>
+					</div>
 					<img src="img/Proy_soci_imagina.gif" alt="">
 					</div>
 					
@@ -436,59 +445,190 @@
 			<span class="lineas linea-inferior"></span>
 			</div>
 			
+			<div class="separation">
 			<center><h2>STAFF</h2>
 			<span class="sub-titular">Conoce a nuestro equipo</span>
 			</center>
-			<br>
-			<br>
+			</div>
 			
-				<div class="container">
-				<div class="row">	
-					
-				<div class="col col-2" align="right">
-				<i class="fa-solid fa-chevron-left"></i>
-				</div>
-							
-				<div class="col col-4">
-				<div class="row">
-					<div class="col col-6">
-					<img src="img/cristian.tigal-1.jpg" alt="">
-					</div>
-					
-					<div class="col col-6">
-					<h3>CRISTIAN TIGAL</h3>
-					<span class="sub-titular">Publicista | Marketing</span>
-					<p>Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad</p>
-					</div>
-					
-				</div>	
-				</div>
-									
-				<div class="col col-4">
-				<div class="row">
-					<div class="col col-6">
-					<img src="img/carlos-1.jpg" alt="">
-					</div>
-					
-					<div class="col col-6">
-					<h3>CARLOS DOMINGUEZ</h3>
-					<span class="sub-titular">Diseñador Gráfico</span>
-					<p>Diseñador gráfico con un buen menejo de UX/UI, listo para sesorarte en lo que necesites.</p>
-					</div>
-					
-				</div>	
-				</div>
-					
-				<div class="col col-2">
-				<i class="fa-solid fa-chevron-right"></i>
-				</div>
-					
-				</div>
-				<center><h4> El verdadero valor de la agencia es su equipo de trabajo</h4></center>
-				</div>
-			
-		</div>
 		
+		
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+					
+                    <div class="card swiper-slide">	
+						
+                   		<div class="image-content">
+                       	<span class="overlay"></span>
+                       	<div class="card-image">
+                       	<img src="img/cristian.tigal-1.jpg" alt="" class="card-img">
+                       	</div>
+                       	</div>
+						
+                        <div class="card-content">
+                        <h2 class="name">CRISTIAN TIGAL</h2>
+						<h5>Publicista | Marketing</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                   <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/frank.vera-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">FRANK VERA</h2>
+						<h5>Diseñador Gráfico | Comunicador Publicitario</h5>
+                        <p class="description">Diseñador gráfico con un buen menejo de UX/UI, listo para sesorarte en lo que necesites.</p>
+                        </div>
+                    </div>
+					
+                   <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/cristian.valverde-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">CRISTIAN VALVERDE</h2>
+						<h5>Diseñador Gráfico | Comunicador Publicitario</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                    <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/diego-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">DIEGO BARRANTES</h2>
+						<h5>Administración | Marketing</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                    <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/carlos-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">CARLOS DOMINGUEZ</h2>
+						<h5>Diseñador Gráfico</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                    <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/erick-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">ERICK RODRÍGUEZ</h2>
+						<h5>Fotografía</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                    <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/alan-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">ALAN LUJÁN</h2>
+						<h5>Desarrollo de Proyectos</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                    <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/Joan-Casas-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">JOAN CASAS</h2>
+						<h5>Asesor Gastronómico</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                    <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/Carlos-Tirado-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">CARLOS TIRADO</h2>
+						<h5>Arquitectura</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+					 <div class="card swiper-slide">
+						
+                        <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                        <img src="img/fresia-1.jpg" alt="" class="card-img">
+                        </div>
+                        </div>
+
+                        <div class="card-content">
+                        <h2 class="name">FRESIA ROJAS</h2>
+						<h5>Derecho Administrativo Legal</h5>
+                        <p class="description">Fundador de la agencia Tigal Group, con basta experiencia en el campo de la publicidad.</p>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+     
+        
+			
+		
+		   </div>
 	</section>
 	
 	<section id="testimonios" class="img_fond_tes">
@@ -575,13 +715,13 @@
 			<span class="lineas linea-superior"></span>
 			<span class="lineas linea-inferior"></span>
 			</div>
-						
+			
+			<div class="separation">
 			<center>
 			<h2>CONTÁCTANOS</h2>
 			<span class="sub-titular">Si desea asesoramiento o quiere atencion personalizada no dude en contactarnos</span>
-			<br><br>
-			<br><br>
 			</center>
+			</div>
 			
 			<form action="index.html" method="post">
 			</form>		
@@ -735,7 +875,7 @@
 					</div>
 					
 					<div class="col col-4" align="right">
-					<input type="submit" class="btn" title="Enviar el mensaje">
+					<input type="submit" class="btn_enviar" title="Enviar el mensaje">
 					</div>
 					</div>
 					
@@ -767,13 +907,13 @@
 			</center>
 			<br>
 			
-			<div class="row">
+			
+			<div class="container_card_blog">
+
+			<div class="card_blog">
 				
-				<div class="col col-4">
-					<article class="blog">
-						
-							<div class="articulo">
-							<img src="img/Blog_01.png" alt="">
+				<div class="articulo">
+				<img src="img/Blog_01.png" alt="">
 								
 								<div class="fecha">
 								<p>10 Mar, 2022</p>
@@ -785,19 +925,17 @@
 								</div>	
 								
 							</div>	
-						
-					</article>				
-				</div>
 				
-				<div class="col col-4">
-					<article class="blog">
-						
-							<div class="articulo">
+			</div>
+				
+			<div class="card_blog">
+				
+				<div class="articulo">
 							<img src="img/Blog_02.png" alt="">
 								
 								<div class="fecha">
 								<p>11 Abr, 2022</p>
-								<h3>¿Cuales son y para que sirven los programas de Diseño Gráfico?</h3>
+								<h3>¿Cuales son los y para qué sirven programas de Diseño Gráfico?</h3>
 								<p>Conocer las herramientas que usamos los diseñadores profesionales, ya sea porque quieres ser diseñador gráfico, o montar tu propio negocio.</p>
 								<div align="right">
 								<a href="https://www.adrianagallegos.es/programas-diseno-grafico/" class="enlace enlace-blog" target="_blank">Seguir leyendo</a>
@@ -805,14 +943,12 @@
 								</div>
 								
 							</div>	
-						
-					</article>				
-				</div>
 				
-				<div class="col col-4">
-				<article class="blog">
-						
-					<div class="articulo">
+			</div>
+				
+			<div class="card_blog">
+				
+				<div class="articulo">
 					<img src="img/Blog_03.png" alt="">
 								
 						<div class="fecha">
@@ -824,15 +960,12 @@
 						</div>	
 						</div>
 								
-					</div>	
-						
-				</article>				
-				</div>
-										
+					</div>
+			</div>
+			
 			</div>
 		</div>
 	</section>
-
 
 	<footer>
 		
@@ -842,7 +975,7 @@
 			
 			<div class="col col-3">
 			<img src="img/Logo_tigalgroup.png" alt="">
-			<p>Construyendo marcas</p>
+			<p class="centrado">Construyendo marcas</p>
 			</div>
 			
 			<div class="col col-3">
@@ -862,21 +995,23 @@
 			</div>
 			
 			<div class="col col-3">
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d493.7764521434669!2d-79.033718!3d-8.079888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d73c34e5e25%3A0xd8994cc3011b473f!2sTIGUICASAGR%C3%81FICA!5e0!3m2!1ses-419!2spe!4v1684262978002!5m2!1ses-419!2spe" width="200" height="162.5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
 			<p>Ubicanos en:</p>
 			<p>Sta. Rosa 888a, La Esperanza 13002</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d493.7764521434669!2d-79.033718!3d-8.079888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d73c34e5e25%3A0xd8994cc3011b473f!2sTIGUICASAGR%C3%81FICA!5e0!3m2!1ses-419!2spe!4v1684262978002!5m2!1ses-419!2spe" width="200" height="162.5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 					
 		</div>
 		</div>
 		</div>
 		
-		<div id="copy">
+		<div id="copy" >
 		<div class="container">
 		<div class="row">
 					
 			<div class="col col-6">
-			<p> <a class="enlace enlace-copy" href="index.html">Tigal Group |</a>	&copy; Copyright 2021 - Todos los derechos reservados.</p>
+			<p> <a class="enlace-copy" href="index.html">Tigal Group |</a>	&copy; Copyright 2021 - Todos los derechos reservados.</p>
 			</div>
 			
 			<div class="col col-5"></div>
@@ -894,50 +1029,7 @@
 	</footer>
 	
 	<a href="#" id="back-top"><i class="fa-solid fa-angle-up"></i></a>
-
-<!----> 	
+	
 </body>
+	<script src="js/script.js"></script>
 </html>
-	
-	
-	<!-- 
-				
-	<script>
-		// Open the Modal
-		function openModal() {
-			document.getElementById("myModal").style.display = "block";
-		}
-		// Close the Modal
-		function closeModal() {
-			document.getElementById("myModal").style.display = "none";
-		}
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		// Next/previous controls
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
-		// Thumbnail image controls
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("demo");
-			var captionText = document.getElementById("caption");
-			if (n > slides.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block";
-			dots[slideIndex-1].className += " active";
-			captionText.innerHTML = dots[slideIndex-1].alt;
-		}
-	</script>
-
-	-->	

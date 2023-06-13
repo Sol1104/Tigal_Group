@@ -56,3 +56,36 @@ $(document).ready(function(){
 
 });
 
+
+// menu //
+
+let navItems = document.querySelectorAll ('.nav_link_item');
+//console.log(navItems);
+
+navItems.forEach((item)=>{
+	console.log(item);
+	
+	item.addEventListener ('click', function(){
+	console.log('clic', item);
+		
+	navItems.forEach((item)=>{
+	item.classList.remove('active');
+	});
+		
+	item.classList.add('active');
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
