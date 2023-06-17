@@ -35,52 +35,65 @@ section id {
 				 width: 100%
 				 }
 
-.col {
-	 z-index: 1;
-	 padding: 0 15px;
-	 }
+.col-1  { 
+		flex: 0 0 8.3%;
+		max-width: 8.3%;
+	    }
 
-.col-2  {
-		z-index: 1;
-		flex: 0 0 calc(16.6% - 30px);
-   		max-width: calc(16.6% - 30px);
+.col-2  { 
+		flex: 0 0 16%;
+		max-width: 16%;
 		}
 
-.col-3  {
-		z-index: 1;
-		flex: 0 0 calc(25% - 30px);
-   		max-width: calc(25% - 30px);
+.col-3  { 
+		flex: 0 0 25%;
+		max-width: 25%;
 		}
 
-.col-4  {
-		z-index: 1;
-		flex: 0 0 calc(33.3% - 30px);
-   		max-width: calc(33.3% - 30px);
+.col-4  { 
+		flex: 0 0 33.3%;
+		max-width: 33.3%;
 		}
 
-.col-5  {
-		z-index: 1;
-		flex: 0 0 calc(41.0% - 30px);
-   		max-width: calc(41.0% - 30px);
+.col-5  { 
+		flex: 0 0 41.6%;
+		max-width: 41.6%;
 		}
 
-.col-6  {
-		z-index: 1;
-		flex: 0 0 calc(50% - 30px);
-   		max-width: calc(50% - 30px);
-        }
+.col-6  { 
+		flex: 0 0 50%;
+		max-width: 50%;
+		}
 
-.col-8  {
-		z-index: 1;
-		flex: 0 0 calc(60% - 30px);
-   		max-width: calc(60% - 30px);
-        }
+.col-7 	{ 
+		flex: 0 0 58.3%;
+		max-width: 58.%;
+		}
 
-.col-12 {
-		z-index: 1;
-		flex: 0 0 calc(100% - 30px);
-   		max-width: calc(100% - 30px);
-        }
+.col-8	{ 
+		flex: 0 0 66.6%;
+		max-width: 66.6%;
+		}
+
+.col-9 	{ 
+		flex: 0 0 75%;
+		max-width: 75%;
+		}
+
+.col-10 { 
+		flex: 0 0 83.3%;
+		max-width: 83.3%;
+		}
+
+.col-11 { 
+		flex: 0 0 91.6%;
+		max-width: 91.6%;
+		}
+
+.col-12 { 
+		flex: 0 0 100%;
+		max-width: 100%;
+		}
 
 .row {
 	 z-index: 1;
@@ -102,7 +115,7 @@ nav {
 	opacity: 0.75;
 	position: fixed;
 	width: 100%;
-	z-index: 100000;
+	z-index: 20000000;
 	}
 
 nav .logo {
@@ -187,6 +200,11 @@ nav .nav_links a:click {
 				 transform: translate(-50%, -50%);
 				 }
 
+header {
+	position: relative;
+	z-index: 5;
+}
+
 #imagen-pricipal {
 				 filter: brightness(70%); 
 				 height: 950.5px;
@@ -196,11 +214,26 @@ nav .nav_links a:click {
 					 background: #FFC501;
 					 opacity: 0.80;
 					 position: absolute;
-					 top: 89.8%;
+					 top: 90%;
 	 				 left: 0%;
 					 right: 0%;	
 					 bottom: 0;
 					 }
+
+#proyectos_estrellas img {
+						 height: 100px;
+						 width: auto;
+						 padding: 0 100px;
+						 align-items: center;
+						 }
+.peque{
+	height: 50px;
+
+						 width: auto;
+						 padding: 0 100px;
+						 align-items: center;
+	
+}
 
 section{
 	padding-top: 80px;
@@ -278,6 +311,20 @@ h3{
 	z-index: 1;
 	}
 
+h4{
+	font-size: 20px;
+	font-weight: lighter;
+	color: #000000;
+	z-index: 1;
+	}
+
+h5{
+	font-size: 18px;
+	font-weight: lighter;
+	color: aliceblue;
+	z-index: 1;
+	}
+
 p {
   z-index: 1;
   text-align: justify;
@@ -296,6 +343,7 @@ img {
 	z-index: 1;
 	width: 100%;
 	height: auto;
+	display: block;
 	}
 
 #portafolio h2  {
@@ -364,10 +412,10 @@ img {
 				  border-width: 1px;
 				  border-style: solid;
 				  border-color: aliceblue;
-				  width: 200px;
-				  height: 266px;
-				  margin: 10%;
-				  padding: 10%;
+				  width: 195px;
+				  height: 300px;
+				  margin: 3%;
+				  padding: 5%;
 				  }
 
 .borde_portafolio {
@@ -424,7 +472,7 @@ img {
 										}
 
 #empresa .sep_tex {
-				  padding: 50px 0;
+				  padding: 50px 10px;
 				  }
  
 #empresa h3 {
@@ -438,6 +486,7 @@ img {
 #empresa img {
 		 	 height: 500px;
 			 overflow: hidden;
+			 padding:  0 10px;
 			 }
 
 #empresa a  {
@@ -452,6 +501,59 @@ img {
 
 #empresa p  {
 			color: #000000;
+			}
+
+#staff h4 {
+	margin: 30px 0 0 0;
+}
+
+.borde_testimonio {
+				  border-width: 1px;
+				  border-style: solid;
+				  border-color: #000000;
+				  width: 300px;
+				  height: 190px;
+				  padding: 7%;
+				  background: #000000;	
+				  position: relative;
+				  }
+
+.border_grupo {
+			  position: absolute;
+			  top: 55%;
+	 		  left: 70%;
+			  right: 0%;	
+			  bottom: 0;
+	          z-index: 4;
+	
+}
+
+.borde_radius {
+			  position: relative;
+			  height: 150px;
+			  width: 150px;
+			  border-radius: 50%;
+			  border: 4px solid #FFFFFF;
+			  background: #FFFFFF;
+			  }
+
+.borde_radius .borde_rad  {
+						  height: 140px;
+						  width: 140px;  
+						  object-fit: cover;  
+						  padding: 20px;
+						  }
+
+#testimonios .col-4 {
+	align-items: flex-start;
+}
+
+#testimonios {
+	background: url("../img/Fondo_02.jpg");	
+}
+
+.separation_tes {
+			margin-bottom: 70px;
 			}
 
 #contacto h2 {
@@ -471,6 +573,10 @@ img {
 				margin-left: -15px;
 				}
 
+#contacto h4 {
+			 color: aliceblue;
+	margin-top: 30px;
+			 }
 /**/
 
 .btn_enviar  {
@@ -498,11 +604,17 @@ img {
 #contacto, checkbox {
 					color: aliceblue;
 					}
-/*ayuda*/
-input[type="checkbox"]{
-	color: #FFC501;
-	border: 2px solid #FFC501;
-	background: #000000;
+/*color del checkbox*/
+input[type="checkbox"]:checked{
+	filter: hue-rotate(203deg);
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea{
+	width: 100%;
+}
+
+form .lab-check {
+	filter: brightness(1.8);
 }
 
 form {
@@ -512,18 +624,22 @@ form {
 
 form label  {
 			z-index: 1;
-			display: none;
 			margin-bottom: 10px;
 			}
 
+form p {
+	margin-bottom: 15px;
+}
+
+form .col {
+	padding: 0 10px;
+}
+
 form input, form textarea   {
 							z-index: 1;
-							display: block;
-							width: -webkit-fill-available;
 							padding: 5px 15px;
 							outline: none;
-	
-							}
+}
 
 /**/
 
@@ -598,6 +714,22 @@ footer p {
 		 margin: 10px 0;
    		 }
 
+.contac {
+	color: aliceblue;
+	text-decoration: none;
+	margin: 10px 0;
+	display: block;
+
+}
+
+.contac:hover {
+				color: #FFC501;
+				text-decoration: underline;
+				text-decoration: none;
+				margin: 10px 0;
+
+}
+
 footer iframe {
 			  margin: 5px 0;
  			  }
@@ -633,6 +765,8 @@ form .form-group {
 
 #social-footer a {
 				 color: aliceblue;
+	   			/* align-items: center;
+   				 justify-content: center;*/
 				 }
 
 #pie-pagina form .btn-newsletter {
@@ -676,5 +810,6 @@ form .form-group {
 					text-decoration: none;
 				 	top: 50%;
 					margin-top: -15px;
-			 		margin-left: -2px;																					 
+			 		margin-left: -2px;	
+	
 					}
